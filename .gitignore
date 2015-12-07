@@ -1,11 +1,5 @@
 ## Ignore 
 
-# User-specific files
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
