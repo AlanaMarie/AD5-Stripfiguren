@@ -28,12 +28,14 @@ namespace Example_01
 
             JArray listStripfiguren = (JArray)striproutes["records"];
 
-            //IList<string> strStripfiguren = listStripfiguren.Select(p => (string)p).ToList();
+            IList<string> strStripfiguren = listStripfiguren.Select(p => (string)p).ToList();
 
-            //Console.WriteLine(listStripfiguren);
+            Console.WriteLine(listStripfiguren);
 
             Console.ReadKey();
             
         }
+
+        
     }
 }
