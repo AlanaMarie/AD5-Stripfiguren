@@ -15,27 +15,32 @@ namespace Example_01
         {
             WebClient webclient = new WebClient();
 
-            var allStriproutes = webclient.DownloadString("http://opendata.brussels.be/api/records/1.0/search?dataset=striproute0");
+            var allStriproutes = webclient.DownloadString("http://opendata.brussel.be/api/records/1.0/search/?dataset=striproute0");
 
-            //Console.WriteLine(jsonData);
+            Console.WriteLine(allStriproutes);
 
-            JObject striproutes = JObject.Parse(allStriproutes);
+            //JObject striproutes = JObject.Parse(allStriproutes);
 
             //var listStripfiguren = (string)jObject.Descendants().OfType<JProperty>().Where(p => p.Name == "personnage_s").First().Value;
 
             //Console.WriteLine(listStripfiguren);
 
 
-            JArray listStripfiguren = (JArray)striproutes["records"];
+            //JArray listStripfiguren = (JArray)striproutes["records"];
 
-            IList<string> strStripfiguren = listStripfiguren.Select(p => (string)p).ToList();
+            //IList<string> strStripfiguren = listStripfiguren.Select(p => (string)p).ToList();
 
-            Console.WriteLine(listStripfiguren);
+            //Console.WriteLine(listStripfiguren);
 
             Console.ReadKey();
-            
+
         }
 
-        
+
+    }
+
+    class Striproutes
+    {
+
     }
 }
