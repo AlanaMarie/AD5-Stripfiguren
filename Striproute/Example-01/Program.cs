@@ -15,32 +15,45 @@ namespace Example_01
         {
             WebClient webclient = new WebClient();
 
-            var allStriproutes = webclient.DownloadString("http://opendata.brussel.be/api/records/1.0/search/?dataset=striproute0");
+            String allStriproutes = webclient.DownloadString(@"http://opendata.brussel.be/api/records/1.0/search/?dataset=striproute0");
 
-            Console.WriteLine(allStriproutes);
+            JObject allStrips = JObject.Parse(allStriproutes);
 
-            //JObject striproutes = JObject.Parse(allStriproutes);
+            //Console.WriteLine(allStrips);
 
-            //var listStripfiguren = (string)jObject.Descendants().OfType<JProperty>().Where(p => p.Name == "personnage_s").First().Value;
+            //var strips = from records in allStrips["records"]
+            //             //from fields in records["personnage_s"]
+            //             select records["fields"].Values<String>();
 
-            //Console.WriteLine(listStripfiguren);
+            //foreach (var strip in strips)
+            //{
+            //    Console.WriteLine(strip.ToString());
+            //}
 
+            var listStripfiguren = allStrips.Descendants().OfType<JProperty>().Where(p => p.Name == "personnage_s").ToList<JProperty>();
 
-            //JArray listStripfiguren = (JArray)striproutes["records"];
+            foreach (var strip in listStripfiguren)
+            {
+                Console.WriteLine(strip.ToString());
+            }
 
-            //IList<string> strStripfiguren = listStripfiguren.Select(p => (string)p).ToList();
+            Console.WriteLine(listStripfiguren);
 
-            //Console.WriteLine(listStripfiguren);
+            //var fields = allStrips["records"].Children()["fields"];
+
+            //var personages = fields.Children()["personnage_s"];
+
+            //foreach (var personage in personages)
+            //{
+            //    Console.WriteLine(personage.ToString());
+            //}
 
             Console.ReadKey();
 
         }
 
+        
 
     }
 
-    class Striproutes
-    {
-
-    }
 }
