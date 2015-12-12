@@ -6,4 +6,4 @@ Brussels has a special route that is called the *commic route* or the *strip rou
 - Newtonsoft Json.net
 
 ## Sources
-API: opendata.brussels.be
+API: [Open data Brussels] (http://opendata.brussels.be/explore/dataset/striproute0/)
