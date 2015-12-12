@@ -19,34 +19,14 @@ namespace Example_01
 
             JObject allStrips = JObject.Parse(allStriproutes);
 
-            //Console.WriteLine(allStrips);
-
-            //var strips = from records in allStrips["records"]
-            //             //from fields in records["personnage_s"]
-            //             select records["fields"].Values<String>();
-
-            //foreach (var strip in strips)
-            //{
-            //    Console.WriteLine(strip.ToString());
-            //}
-
             var listStripfiguren = allStrips.Descendants().OfType<JProperty>().Where(p => p.Name == "personnage_s").ToList<JProperty>();
 
             foreach (var strip in listStripfiguren)
             {
-                Console.WriteLine(strip.ToString());
+                Console.WriteLine(strip.Value);
             }
 
             Console.WriteLine(listStripfiguren);
-
-            //var fields = allStrips["records"].Children()["fields"];
-
-            //var personages = fields.Children()["personnage_s"];
-
-            //foreach (var personage in personages)
-            //{
-            //    Console.WriteLine(personage.ToString());
-            //}
 
             Console.ReadKey();
 
