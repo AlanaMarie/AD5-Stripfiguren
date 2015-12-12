@@ -7,33 +7,52 @@ using System.Net;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace Example_01
+namespace Example
 {
     class Program
     {
         static void Main(string[] args)
         {
+            // To extract the data from an online source
             WebClient webclient = new WebClient();
 
-            String allStriproutes = webclient.DownloadString(@"http://opendata.brussel.be/api/records/1.0/search/?dataset=striproute0");
+            String allStriproutes;
 
-            JObject allStrips = JObject.Parse(allStriproutes);
+            // Get's all objects
+            JObject allStrips = new JObject();
 
-            var listStripfiguren = allStrips.Descendants().OfType<JProperty>().Where(p => p.Name == "personnage_s").ToList<JProperty>();
-
-            foreach (var strip in listStripfiguren)
+            // In case the link doesn't work an exception must been thrown.
+            try
             {
-                Console.WriteLine(strip.Value);
+                // Sends a GET-request
+                allStriproutes = webclient.DownloadString(@"http://opendata.brussels.be/api/records/1.0/search/?dataset=striproute0&rows=100");
+
+                // Parses the data from the GET-request
+                allStrips = JObject.Parse(allStriproutes);
+
+                // Using LinQ to get a specific field with JProperty
+                var listStripfiguren = allStrips.Descendants()
+                                                .OfType<JProperty>()
+                                                .Where(p => p.Name == "personnage_s")
+                                                .ToList<JProperty>();
+
+                // Loop through the list
+                foreach (var strip in listStripfiguren)
+                {
+                    // Use Value instead of ToString()
+                    // ToString will give => "personnage_s" : "TinTin" 
+                    // ToString will give => TinTin
+                    // See the difference?
+                    Console.WriteLine(strip.Value);
+                }
+            }
+            catch (WebException ex)
+            {
+                Console.WriteLine("Cannot find the online web API.");
             }
 
-            Console.WriteLine(listStripfiguren);
-
             Console.ReadKey();
-
         }
-
-        
-
     }
 
 }
