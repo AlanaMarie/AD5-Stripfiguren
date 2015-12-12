@@ -1,5 +1,8 @@
 ## Ignore 
 
+# User-specific files
+*.suo
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
