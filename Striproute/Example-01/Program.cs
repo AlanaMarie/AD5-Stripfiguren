@@ -41,7 +41,7 @@ namespace Example
                 {
                     // Use Value instead of ToString()
                     // ToString will give => "personnage_s" : "TinTin" 
-                    // ToString will give => TinTin
+                    // Value will give => Tintin
                     // See the difference?
                     Console.WriteLine(strip.Value);
                 }
