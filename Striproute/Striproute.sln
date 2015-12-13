@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Striproute", "Example-01\Striproute.csproj", "{A893ABD7-4AEB-40A9-BF27-B9B4F2E885AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Striproute", "Striproute\Striproute.csproj", "{9615C793-7294-49A1-A129-91F66F137A48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A893ABD7-4AEB-40A9-BF27-B9B4F2E885AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A893ABD7-4AEB-40A9-BF27-B9B4F2E885AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A893ABD7-4AEB-40A9-BF27-B9B4F2E885AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A893ABD7-4AEB-40A9-BF27-B9B4F2E885AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9615C793-7294-49A1-A129-91F66F137A48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9615C793-7294-49A1-A129-91F66F137A48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9615C793-7294-49A1-A129-91F66F137A48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9615C793-7294-49A1-A129-91F66F137A48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A893ABD7-4AEB-40A9-BF27-B9B4F2E885AD}</ProjectGuid>
+    <ProjectGuid>{9615C793-7294-49A1-A129-91F66F137A48}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Example_01</RootNamespace>
-    <AssemblyName>Example-01</AssemblyName>
+    <RootNamespace>Striproute</RootNamespace>
+    <AssemblyName>Striproute</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
