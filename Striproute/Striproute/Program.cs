@@ -16,11 +16,15 @@ namespace Striproute
 
             String allStriproutes;
 
+            JObject allStrips = new JObject();
+
             try
             {
                 allStriproutes = webclient.DownloadString(@"http://opendata.brussels.be/api/records/1.0/search/?dataset=striproute0&rows=100");
 
-                Console.WriteLine(allStriproutes);
+                allStrips = JObject.Parse(allStriproutes);
+
+                Console.WriteLine(allStrips);
             }
             catch (WebException ex)
             {
