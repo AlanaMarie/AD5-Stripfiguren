@@ -7,7 +7,7 @@ using System.Net;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace Example
+namespace Striproute
 {
     class Program
     {
@@ -40,8 +40,8 @@ namespace Example
                 foreach (var strip in listStripfiguren)
                 {
                     // Use Value instead of ToString()
-                    // ToString will give => "personnage_s" : "TinTin" 
-                    // Value will give => Tintin
+                    // strip.ToString() will give => "personnage_s" : "TinTin" 
+                    // strip.Value will give => Tintin
                     // See the difference?
                     Console.WriteLine(strip.Value);
                 }

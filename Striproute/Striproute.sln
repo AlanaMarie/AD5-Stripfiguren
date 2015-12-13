@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example-01\Example.csproj", "{A893ABD7-4AEB-40A9-BF27-B9B4F2E885AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Striproute", "Example-01\Striproute.csproj", "{A893ABD7-4AEB-40A9-BF27-B9B4F2E885AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
