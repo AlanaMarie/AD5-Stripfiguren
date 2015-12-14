@@ -1,9 +1,9 @@
-# Striproute Demo
+# Stripfiguren Demo
 *API’s are the new black.* Cities like Brussels provide open data, so in this DEMO a *comic route* API is used to get a list of characters. The main goals of this BRANCH are:
 - deserialize data with JObject
 - show the deserialized data in the console application
 
-This Branch is parrallel with step 2 `Deserialize data` of the walkthrough.
+This branch is parrallel with step 2 `Deserialize data` of the walkthrough.
 
 ## Requirements
 - Visual Studio
