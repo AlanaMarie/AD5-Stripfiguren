@@ -3,7 +3,7 @@
 - send a GET-request
 - show the data in the console application
 
-This Branch is parrallel with step 1 `Gegevens ophalen`
+This Branch is parrallel with step 1 `Gegevens ophalen` of the walkthrough.
 
 ## Requirements
 - Visual Studio
