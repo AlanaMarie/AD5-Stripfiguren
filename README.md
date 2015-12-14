@@ -1,5 +1,9 @@
 # Striproute Demo
-Brussels has a special route that is called the *comic route* or the *strip route* in Dutch. Luckily the city Brussels provides an open dataset of the commic route.
+*API’s are the new black.* Cities like Brussels provide open data, so in this DEMO a *comic route* API is used to get a list of characters. The main goals of this BRANCH is:
+- send a GET-request
+- show the data in the console application
+
+This Branch is parrallel with step 1 `Gegevens ophalen`
 
 ## Requirements
 - Visual Studio
