@@ -24,7 +24,15 @@ namespace Striproute
 
                 allStrips = JObject.Parse(allStriproutes);
 
-                Console.WriteLine(allStrips);
+                var listStripfiguren = allStrips.Descendants()
+                                                .OfType<JProperty>()
+                                                .Where(p => p.Name == "personnage_s")
+                                                .ToList<JProperty>();
+
+                foreach (var strip in listStripfiguren)
+                {
+                    Console.WriteLine(strip.Value);
+                }
             }
             catch (WebException ex)
             {
