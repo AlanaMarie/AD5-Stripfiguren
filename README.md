@@ -3,7 +3,7 @@
 - deserialize data with JObject
 - show the deserialized data in the console application
 
-This Branch is parrallel with step 2 `Deserialize data`
+This Branch is parrallel with step 2 `Deserialize data` of the walkthrough.
 
 ## Requirements
 - Visual Studio
