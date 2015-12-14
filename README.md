@@ -1,5 +1,8 @@
 # Striproute Demo
-Brussels has a special route that is called the *comic route* or the *strip route* in Dutch. Luckily the city Brussels provides an open dataset of the commic route.
+*API’s are the new black.* Cities like Brussels provide open data, so in this DEMO a *comic route* API is used to get a list of characters. The main goals of this DEMO are:
+- send a GET-request
+- deserialize data
+- filter data by using LinQ
 
 ## Requirements
 - Visual Studio
